@@ -39,5 +39,13 @@ class ConocidosSeeder extends Seeder
         'usuario_id' => '3',
         'nombre' => 'Dionicio',
       ]);
+      DB::table('conocidos')->insert([
+        'usuario_id' => '3',
+        'nombre' => 'Berenice',
+      ]);
+      DB::table('conocidos')->insert([
+        'usuario_id' => '3',
+        'nombre' => 'Consuelo',
+      ]);
     }
 }

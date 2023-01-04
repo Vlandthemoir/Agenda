@@ -9,15 +9,15 @@
   <body>
     <div class="general-container">
       <div class="form">
-        <form class="" action="/login" method="POST">
+        <form class="" action="{{route('register.store')}}" method="POST">
           @csrf
           <div class="icon">
             <i id="icon" class="fas fa-address-book"></i>
           </div>
           <label for=""><b>Registro de usuario</b></label>
           <input type="text" name="seudonimo" placeholder="Seudonimo">
-          <input type="password" name="clave" placeholder="Clave">
           <input type="text" name="nombre" placeholder="Nombre">
+          <input type="password" name="clave" placeholder="Clave">
           <button type="submit" name="button"><b>Registrarse</b></button>
         </form>
       </div>

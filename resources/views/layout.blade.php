@@ -11,6 +11,9 @@
 					<span><i class="fa-solid fa-user"></i> Hola <b>{{ auth()->user()->nombre }}</b></span>
 					<span class="menu"><a href="{{route('home.index')}}"><i class="fa-solid fa-house"></i><b>Inicio</b></a></span>
 					<span class="menu"><a href="{{route('conocido.index')}}"><i class="fa-solid fa-file-pen"></i><b>Conocidos</b></a></span>
+					@if(auth()->user()->rol == 'Administrador')
+					<span class="menu"><a href="{{route('conocido.index')}}"><i class="fa-solid fa-cubes"></i><b>API</b></a></span>
+					@endif
 					<div class="icon-container" >
 						<a href="{{ route('login.destroy')  }}"><i id="salir"  class="fa-solid fa-power-off"></i></a>
 					</div>

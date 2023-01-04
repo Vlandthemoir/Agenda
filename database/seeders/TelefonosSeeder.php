@@ -70,5 +70,16 @@ class TelefonosSeeder extends Seeder
         'telefono' => '9611111111',
         'tipo' => 'Publico',
       ]);
+      /*
+      DB::table('telefonos')->insert([
+        'conocido_id' => '7',
+        'telefono' => '9611011111',
+        'tipo' => 'Publico',
+      ]);
+      DB::table('telefonos')->insert([
+        'conocido_id' => '7',
+        'telefono' => '9611021111',
+        'tipo' => 'Privado',
+      ]);*/
     }
 }

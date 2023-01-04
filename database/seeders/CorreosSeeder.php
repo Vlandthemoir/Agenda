@@ -38,5 +38,11 @@ class CorreosSeeder extends Seeder
         'conocido_id' => '6',
         'correo' => 'dioniocio@gmail.com',
       ]);
+      /*
+      DB::table('correos')->insert([
+        'conocido_id' => '7',
+        'correo' => 'berenice@gmail.com',
+      ]);
+      */
     }
 }

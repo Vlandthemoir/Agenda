@@ -34,6 +34,8 @@ Route::get('/logout',[LoginController::class,'destroy'])
 /*rutas para el registro*/
 Route::get('/registro',[RegistroController::class,'index'])
 ->name('register.index');
+Route::post('/register-usuarios',[RegistroController::class,'store'])
+->name('register.store');
 /*rutas para los conocidos*/
 Route::get('/conocido', [ConocidoController::class, 'index'])
 ->middleware('auth')
